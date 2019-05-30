@@ -1,0 +1,21 @@
+
+.icon-allowed_cond:before { content: '\e800'; } /* '' */
+.icon-bike:before { content: '\e801'; } /* '' */
+.icon-car:before { content: '\e802'; } /* '' */
+.icon-charge:before { content: '\e803'; } /* '' */
+.icon-control_vel:before { content: '\e804'; } /* '' */
+.icon-denied_path:before { content: '\e805'; } /* '' */
+.icon-eletric_mauer:before { content: '\e806'; } /* '' */
+.icon-fleet:before { content: '\e807'; } /* '' */
+.icon-follow_bike:before { content: '\e808'; } /* '' */
+.icon-follow_car:before { content: '\e809'; } /* '' */
+.icon-follow_fleet:before { content: '\e80a'; } /* '' */
+.icon-follow_charge:before { content: '\e80b'; } /* '' */
+.icon-fuel_man:before { content: '\e80c'; } /* '' */
+.icon-in_your_hand:before { content: '\e80d'; } /* '' */
+.icon-marker:before { content: '\e80e'; } /* '' */
+.icon-out_of_traj:before { content: '\e80f'; } /* '' */
+.icon-out_route:before { content: '\e810'; } /* '' */
+.icon-safe:before { content: '\e811'; } /* '' */
+.icon-store_data:before { content: '\e812'; } /* '' */
+.icon-support:before { content: '\e813'; } /* '' */
