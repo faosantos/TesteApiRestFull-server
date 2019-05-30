@@ -18,3 +18,14 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+//referente ao aluno
+Route::get('/aluno/add', 'HomeController@create');
+Route::get('aluno/{id}', 'HomeController@show');
+Route::get('aluno/delete/{id}', 'HomeController@destroy');
+Route::post('/aluno/add', 'HomeController@store');
+Route::post('/aluno/update/{id}', 'HomeController@update');
+
+Route::post('/search/aluno', 'HomeController@findAluno');

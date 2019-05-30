@@ -1,6 +1,6 @@
-@extends('layouts.dash')
+{{-- @extends('layouts.dash')
 @section('content')
-    @include('dash.aluno.modal')
+    @include('dash.aluno.modal') --}}
     <div id="content-wrapper">
         <div class="container-fluid">
             <ol class="breadcrumb">
@@ -113,7 +113,7 @@
                 <div class="card-footer small text-muted">Ultimo update {{date('d/m/Y')}}</div>
             </div>
         </div>
-        <footer class="sticky-footer">
+        {{-- <footer class="sticky-footer">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
                     <span>Copyright © {{config('app.name')}} {{date('Y', time())}}</span>
@@ -139,4 +139,4 @@
         window.location.replace('/aluno/delete/'+curId);
     }
 </script>
-@endsection
+@endsection --}}
