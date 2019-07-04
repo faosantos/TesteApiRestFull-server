@@ -15,11 +15,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Route::get('homeAluno', 'HomeController@indexAluno')->name('homeAluno');
+
+Route::get('/aluno/add', 'AlunoController@create');
+Route::get('aluno/{id}', 'AlunoController@show');
+Route::get('aluno/delete/{id}', 'AlunoController@destroy');
+Route::post('/aluno/add', 'AlunoController@store');
+Route::post('/aluno/update/{id}', 'AlunoController@update');
+
+Route::post('/search/aluno', 'HomeController@findAluno');
+
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')
+Route::get('dash/home', 'HomeController@index')
         ->name('home')
         ->middleware('auth.unique.user');
+
+Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
 // parte nova
 

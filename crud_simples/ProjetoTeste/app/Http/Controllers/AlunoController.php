@@ -17,6 +17,7 @@ class AlunoController extends Controller
         }else{
             return redirect('/');
         }
+        // return view('dash.aluno.form');
     }
     public function store(Request $request)
     {

@@ -13,8 +13,11 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
+                    <div>
+                        <a href="{{route('dash.aluno')}}">
+                            <i class="fa fa-file-text"> Entrar no Sistema</i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
