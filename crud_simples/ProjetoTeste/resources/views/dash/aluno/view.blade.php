@@ -1,7 +1,7 @@
 
 @extends('layouts.dash')
 @section('content')
-@include('dash.aluno.modal')
+{{-- @include('dash.aluno.modal') --}}
 <div id="content-wrapper" class="bg-light">
     <div class="container-fluid">
         @if(array_key_exists('success', $_GET) && $_GET['success'] == 'true')
@@ -111,7 +111,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mr-auto mb-5">
+            {{-- <div class="col-md-4 mr-auto mb-5">
                 <div class="card">
                     <div class="card-header">
                         <label>Aluno - {{$aluno->name}}</label>
@@ -128,7 +128,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             </div>
         </div>
     </div>

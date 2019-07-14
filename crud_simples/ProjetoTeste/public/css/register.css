@@ -1,0 +1,13 @@
+
+
+.nav-link1{
+
+    color: white;
+    
+}
+
+.linha-vertical {
+    height: 20px;/*Altura da linha*/
+    border-left: 6px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+    color: white;
+  }

@@ -66,8 +66,8 @@ class AlunoController extends Controller
     public function show($id)
     {
         $aluno = Aluno::findOrFail($id);
-        $turmas = $aluno->turmas()->get();
-        return view('dash.aluno.view', ['aluno'=> $aluno, 'turmas'=>$turmas]);
+        // $turmas = $aluno->turmas()->get();
+        return view('dash.aluno.view', ['aluno'=> $aluno]);
     }
     public function update(Request $request, $id)
     {
