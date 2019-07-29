@@ -49,7 +49,7 @@ class AlunoController extends Controller
         ];
         $user = Aluno::create($user);
         if($user){
-            return redirect('/?success=true');
+            return redirect('dash/home?success=true');
         }else{
             return redirect('/aluno/add?success=false&msg=Algo deu errado, confirme os campos e tente novamente');
         }
@@ -59,9 +59,9 @@ class AlunoController extends Controller
         $aluno = Aluno::findOrFail($id);
         $confirm = $aluno->delete();
         if($confirm)
-            return redirect('/?success=2');
+            return redirect('dash/home?success=2');
         else
-            return redirect('/?success=false');
+            return redirect('dash/home?success=false');
     }
     public function show($id)
     {

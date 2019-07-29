@@ -8,14 +8,14 @@
         </a>
     </li>
     <li class="nav-item active">
-        <a href="/turmas" class="nav-link">
+        <a href="#" class="nav-link">
             {{-- <i class="fas fa-fw fa-car-alt"></i> --}}
             <i class="fas fa-chalkboard-teacher"></i>
             <span>Turmas</span>
         </a>
     </li>
     <li class="nav-item active">
-        <a href="/agenda" class="nav-link">
+        <a href="#" class="nav-link">
             <i class="fas fa-fw fa-book"></i>
             <span>Agenda</span>
         </a>

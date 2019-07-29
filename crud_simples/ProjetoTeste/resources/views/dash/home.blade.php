@@ -1,6 +1,6 @@
 @extends('layouts.dash')
 @section('content')
-    @include('dash.aluno.modal')
+@include('dash.aluno.modal')
     <div id="content-wrapper">
         <div class="container-fluid">
             <ol class="breadcrumb">
@@ -62,7 +62,7 @@
                             <tbody>
                                 @forelse($alunos as $item)
                                     <tr>
-                                        <td title="{{$item->id}}"">{{$item->id}}</td>
+                                        <td title="{{$item->id}}">{{$item->id}}</td>
                                         <td title="{{$item->name}}">
                                             <a href="/aluno/{{$item->id}}">{{$item->name}}</a>
                                         </td>
@@ -134,7 +134,7 @@
         curId = null;
         console.log(curId)
     });
-    function deleteClient(){
+    function deleteAluno(){
         console.log('called delete for:' + curId);
         window.location.replace('/aluno/delete/'+curId);
     }

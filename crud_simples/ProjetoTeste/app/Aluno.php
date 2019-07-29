@@ -11,11 +11,11 @@ class Aluno extends Model
         'name', 'phone_a', 'phone_b', 'email', 'address', 'type', 'turno'
     ];
     
-    public function turmas()
-    {
-        return $this->hasMany('App\Turma', 'aluno_id');
-    }
+    // public function turmas()
+    // {
+    //     return $this->hasMany('App\Turma', 'aluno_id');
+    // }
     public function type(){
-        return $this->type == 't' ? 'ManhĂ£' : 'Tarde';
+        return $this->type == 't' ? 'Manhã' : 'Tarde';
     }
 }

@@ -11,6 +11,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        // Usar somente quando for usar com seed
+        DB::statement("SET foreign_key_checks = 0"); 
+        
+        $this->call([
+            UsersTableSeeder::class,
+            AlunosTableSeeder::class
+        ]);
     }
 }

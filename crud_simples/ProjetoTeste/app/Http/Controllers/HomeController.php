@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Pagination\Paginator;
 use App\Aluno;
 
 class HomeController extends Controller
@@ -37,7 +39,7 @@ class HomeController extends Controller
                 ->orWhere('name', 'like', '%'. $req->name . '%')
                 ->orWhere('address', 'like', '%'.$req->name.'%')
                 ->get();
-            return view('dash.aluno', ['alunos' => $obj]);
+            return view('dash.home', ['alunos' => $obj]);
         }else{
             return redirect('/');
         }
